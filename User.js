@@ -1,4 +1,4 @@
-class User {
+export default class User {
   constructor(nome, email, nascimento, role, ativo = true) {
     this.nome = nome;
     this.email = email;
@@ -13,7 +13,7 @@ class User {
 }
 
 const newUser = new User("Juliana", "j@j.com", "2024-01-01");
-console.log(newUser);
-console.log(newUser.exibirInfos());
+// console.log(newUser);
+// console.log(newUser.exibirInfos());
 
-console.log(User.prototype.isPrototypeOf(newUser))
+// console.log(User.prototype.isPrototypeOf(newUser))
