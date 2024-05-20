@@ -8,6 +8,10 @@ export default class Admin extends User {
   criarCurso(nomeCurso, qtdVagas) {
     return `curso ${nomeCurso} criado com ${qtdVagas} vagas.`;
   }
+
+  exibeNome() {
+    return `${this.#nome}`;
+  }
 }
 
 // const newAdmin = new Admin("Rodrigo", "r@r.com", "2021-01-01", "admin");
