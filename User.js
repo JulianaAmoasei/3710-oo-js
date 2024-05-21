@@ -40,7 +40,7 @@ export default class User {
   } 
 
   exibirInfos() {
-    return `${this.nome}, ${this.role}, ${this.email}`;
+    return `dados: ${this.nome}, ${this.email}`;
   }
 }
 
