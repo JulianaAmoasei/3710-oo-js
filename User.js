@@ -40,7 +40,15 @@ export default class User {
   } 
 
   exibirInfos() {
-    return `dados: ${this.nome}, ${this.email}`;
+    if (this.role === 'estudante') {
+      return `dados estudante: ${this.nome}, ${this.email}`;
+    }
+    if (this.role === 'admin') {
+      return `dados admin: ${this.nome}, ${this.email}, ${this.role}`;      
+    }
+    if (this.role === 'docente') {
+      return `dados docente: ${this.nome}, ${this.role}`;      
+    }
   }
 
   static exibirInfosGenericas(nome, email) {
