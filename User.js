@@ -42,6 +42,10 @@ export default class User {
   exibirInfos() {
     return `dados: ${this.nome}, ${this.email}`;
   }
+
+  static exibirInfosGenericas(nome, email) {
+    return `${nome}, ${email}`
+  }
 }
 
 // const newUser = new User("Juliana", "j@j.com", "2024-01-01");

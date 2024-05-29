@@ -6,7 +6,8 @@ export default class Admin extends User {
   }
 
   exibirInfos() {
-    return `dados: ${this.nome}, ${this.role}, ${this.email}`;
+    const infos = super.exibirInfos()
+    return `admin - ${infos}`;  
   }
 
   criarCurso(nomeCurso, qtdVagas) {
